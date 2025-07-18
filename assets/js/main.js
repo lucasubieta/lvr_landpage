@@ -93,12 +93,11 @@
 
 			}
 
-	// Main Sections: Two.
+// Main Sections: Two.
 
-		// Lightbox gallery.
+		// Lightbox gallery (modificado para incluir #two y #three en un mismo carrusel).
 			$window.on('load', function() {
-
-				$('#two').poptrox({
+				$('#two, #three, #four').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
@@ -108,10 +107,8 @@
 					usePopupCaption: true,
 					usePopupDefaultStyling: false,
 					usePopupEasyClose: false,
-					usePopupNav: true,
+					usePopupNav: true, // ← Esto activa el carrusel
 					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
 				});
-
 			});
-
 })(jQuery);
