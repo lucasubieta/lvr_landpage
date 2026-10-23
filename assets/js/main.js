@@ -97,7 +97,7 @@
 
 		// Lightbox gallery (modificado para incluir #two y #three en un mismo carrusel).
 			$window.on('load', function() {
-				$('#two, #three, #four').poptrox({
+				$('#two, #three, #four, #six').poptrox({
 					caption: function($a) { return $a.next('h3').text(); },
 					overlayColor: '#2c2c2c',
 					overlayOpacity: 0.85,
